@@ -1,0 +1,209 @@
+:root {
+    --color: #f97010;
+    --color1: #f9af10;
+    --bg-color: #11202d;
+    --white: #fff;
+    --black: #0e0d0d;
+    --gray: rgb(212, 212, 212);
+    --text-gray: #a1a1a1;
+    --light: rgb(241, 241, 241);
+}
+
+.grade-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.grade-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.grade-nav-pills{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+}
+
+.grade-nav-pills a{
+    padding: 5% 3%;
+    font-size: 15px;
+    color: var(--color);
+    border-bottom: 1px solid var(--text-gray);
+    transition: 0.2s !important;
+    position: relative;
+
+    z-index: 9;
+}
+
+.grade-nav-pills a:hover{
+    background-color: var(--color);
+    color: var(--white);
+}
+
+.grade-nav-pills .act{
+    background-color: var(--color);
+    color: var(--white);
+}
+
+.grade-content-container{
+    width: 65%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.grade-content-container .grade-details h2{
+    color: var(--color);
+    font-weight: 600;
+    padding-bottom: 2%;
+    border-bottom: 1px dashed var(--color);
+}
+
+.grade-content-container .grade-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grade-content-container .grade-images img{
+    width: 47%;
+    height: 300px;
+    object-fit: contain;
+}
+
+@media screen and (max-width:700px) {
+    
+.grade-nav-pills{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.grade-content-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+}
+
+
+/* hire-choosing-section */
+
+.hire-choosing-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8%;
+}
+
+.hire-choosing-container {
+    width: 100%;
+    height: auto;
+
+}
+
+.hire-choosing-title h2{
+    color: var(--bg-color);
+    font-weight: 900;
+}
+
+.hire-choosing-title h2 span{
+    color: var(--color);
+    font-weight: 900;
+}
+
+
+.hireChoose-box-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.hireChoose-box {
+    width: 22%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color);
+    align-items: center;
+    border: 1px solid var(--color);
+    border-radius: 10px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    text-align: center;
+    color: var(--white);
+    padding: 1%;
+    border-bottom: 5px solid var(--color1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hireChoose-box .hireChoose-box-images{
+    margin-bottom: 5%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.hireChoose-box i{
+    font-size: 25px;
+    color: var(--color);
+}
+
+@media screen and (max-width:426px) {
+    
+.hireChoose-box {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 3%;
+}
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+    .hireChoose-box {
+        width: 47%;
+        height: 200px;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:820px) {
+    .hireChoose-box {
+        width: 30%;
+        height: 200px;
+        margin-bottom: 3%;
+    }
+}

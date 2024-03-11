@@ -1,0 +1,108 @@
+:root {
+    --color: #f97010;
+    --color1: #f9af10;
+    --bg-color: #11202d;
+    --white: #fff;
+    --black: #0e0d0d;
+    --gray: rgb(212, 212, 212);
+    --text-gray: #a1a1a1;
+}
+
+
+/* infrastructure-section  */
+
+.infrastructure-section{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    position: relative;
+    padding: 2%;
+}
+
+.infrastructure-section .infrastructure-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.infrastructure-section .infrastructure-container .infratructure-content-boxs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-bottom: 2px dashed var(--color);
+    padding-bottom: 3%;
+}
+
+.infrastructure-section .infrastructure-container .infratructure-content-boxs:nth-child(odd){
+    flex-wrap: wrap-reverse !important;
+}
+
+
+.infrastructure-section .infrastructure-container .infratructure-content-boxs .infrastructure-images{
+    width: 47%;
+    height: auto;
+
+}
+
+.infrastructure-section .infrastructure-container .infratructure-content-boxs .infrastructure-content{
+    width: 47%;
+    height: auto;
+
+}
+
+.infrastructure-section .infrastructure-container .infratructure-content-boxs .infrastructure-images img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.infrastructure-section .infrastructure-container .infratructure-content-boxs .infrastructure-content h2{
+    color: var(--color);
+    font-weight: 700;
+    border-bottom: 1px dashed var(--color);
+    padding-bottom: 2%;
+}
+
+.infrastructure-section .infrastructure-container .infratructure-content-boxs .infrastructure-content h5{
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+@media screen and (max-width:600px) {
+    .infrastructure-section .infrastructure-container .infratructure-content-boxs .infrastructure-images{
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .infrastructure-section .infrastructure-container .infratructure-content-boxs .infrastructure-content{
+        width: 100%;
+        height: auto;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
