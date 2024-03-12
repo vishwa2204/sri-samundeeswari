@@ -2076,11 +2076,12 @@ footer .footer-box-container .footer-boxs-2 .footer-boxs-content {
 
 
 footer .footer-box-container .footer-boxs-2 .footer-boxs-content .footer-logo {
-    width: 70% !important;
+    width: 20% !important;
 }
 
 footer .footer-box-container .footer-boxs-2 .footer-boxs-content .footer-logo img {
     width: 100%;
+    object-fit: contain;
 }
 
 footer .footer-box-container .footer-boxs-2 .footer-boxs-content p {
