@@ -2313,3 +2313,32 @@ footer .footer .after-footer p a:hover {
     }
 
 }
+
+
+/* .reveal  */
+
+.slided {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.slided.active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* .reveal  */
+
+.slided1 {
+    position: relative;
+    transform: translateX(-500px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.slided1.active {
+    transform: translateX(0px);
+    opacity: 1;
+}

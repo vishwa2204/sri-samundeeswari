@@ -61,27 +61,35 @@
                     <div class="nav-menus">
                         <ul>
                             <li><a href="index.html"><span>HOME</span> <i class="fa-solid fa-chevron-down"></i></a></li>
-                            <li><a href="about.html"><span>ABOUT</span> <i class="fa-solid fa-chevron-down"></i></a></li>
+                            <li><a href="about.html"><span>ABOUT</span> <i class="fa-solid fa-chevron-down"></i></a>
+                            </li>
                             <li class="drop">
                                 <a href="#" class="d-1">
                                     <span>GRADE</span> <i class="fa-solid fa-chevron-down"></i>
                                 </a>
                                 <ul class="services-dropdown">
-                                    <li><a href="wcb-steel.html"><span>WCB Steel</span> <i class="fa-solid fa-chevron-right"></i></a>
+                                    <li><a href="wcb-steel.html"><span>WCB Steel</span> <i
+                                                class="fa-solid fa-chevron-right"></i></a>
                                     </li>
-                                    <li><a href="mn-steel.html"><span>MN Steel</span> <i class="fa-solid fa-chevron-right"></i></a>
+                                    <li><a href="mn-steel.html"><span>MN Steel</span> <i
+                                                class="fa-solid fa-chevron-right"></i></a>
                                     </li>
-                                    <li><a href="high-chrome-steel.html"><span>High Chrome Steel</span> <i class="fa-solid fa-chevron-right"></i></a>
+                                    <li><a href="high-chrome-steel.html"><span>High Chrome Steel</span> <i
+                                                class="fa-solid fa-chevron-right"></i></a>
                                     </li>
-                                    <li><a href="stainless-steel.html"><span>Stainless Steel</span> <i class="fa-solid fa-chevron-right"></i></a>
+                                    <li><a href="stainless-steel.html"><span>Stainless Steel</span> <i
+                                                class="fa-solid fa-chevron-right"></i></a>
                                     </li>
-                                    <li><a href="special-alloys-steel.html"><span>Special Alloys Steel</span> <i class="fa-solid fa-chevron-right"></i></a>
+                                    <li><a href="special-alloys-steel.html"><span>Special Alloys Steel</span> <i
+                                                class="fa-solid fa-chevron-right"></i></a>
                                     </li>
-                                    <li><a href="duplex-steel.html"><span>Duplex Steel</span> <i class="fa-solid fa-chevron-right"></i></a>
+                                    <li><a href="duplex-steel.html"><span>Duplex Steel</span> <i
+                                                class="fa-solid fa-chevron-right"></i></a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="infrastructure.html"><span>INFRASTRUCTURE</span> <i class="fa-solid fa-chevron-down"></i></a>
+                            <li><a href="infrastructure.html"><span>INFRASTRUCTURE</span> <i
+                                        class="fa-solid fa-chevron-down"></i></a>
                             </li>
                             <li><a href="blog.html"><span>BLOGS</span> <i class="fa-solid fa-chevron-down"></i></a></li>
                             <li><a href="#"><span>CONTACT</span> <i class="fa-solid fa-chevron-down"></i></a></li>
@@ -174,9 +182,9 @@
         <div class="home-about-container container">
             <div class="home-about-images">
 
-                <img src="assets/images/used-pics/1.jpg" alt="samundeeswari-about">
-                <img src="assets/images/used-pics/2.jpg" alt="samundeeswari-about">
-                <img src="assets/images/used-pics/3.jpg" alt="samundeeswari-about">
+                <img src="assets/images/used-pics/1.jpg" class="slided" alt="samundeeswari-about">
+                <img src="assets/images/used-pics/2.jpg" class="slided1" alt="samundeeswari-about">
+                <img src="assets/images/used-pics/3.jpg" class="slided" alt="samundeeswari-about">
 
                 <!-- <div class="about-img1">
                     <img src="assets/images/used-pics/1.jpg" class="" width="100%" alt="samundeeswari-about">
@@ -760,7 +768,7 @@
                             <div class="footer-address-content">
                                 <a href="tel:+919994080293">+91 99940 80293</a>
                                 <a href="tel:+919944557750">+91 99445 57750</a>
-                                
+
                             </div>
                         </div>
                         <!-- Footer Appoinment Number End  -->
@@ -916,6 +924,91 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+    </script>
+
+    <script>
+
+
+        // reveal website 
+
+        window.addEventListener('scroll', slided);
+
+        function slided() {
+            var slideLeft = document.querySelectorAll('.slided');
+
+            for (var i = 0; i < slideLeft.length; i++) {
+                var windowHeight = window.innerHeight;
+
+                var slidtop = slideLeft[i].getBoundingClientRect().top;
+
+                var slidPoint = 50;
+
+                if (slidtop < windowHeight - slidPoint) {
+                    slideLeft[i].classList.add('active');
+                }
+                else {
+                    slideLeft[i].classList.remove('active');
+                }
+
+
+            }
+        }
+
+        ///////////////////////////////////////////////////
+
+        // reveal website 
+
+        window.addEventListener('scroll', slided1);
+
+        function slided1() {
+            var slide1Left = document.querySelectorAll('.slided1');
+
+            for (var i = 0; i < slide1Left.length; i++) {
+                var window1Height = window.innerHeight;
+
+                var slid1top = slide1Left[i].getBoundingClientRect().top;
+
+                var slid1Point = 50;
+
+                if (slid1top < window1Height - slid1Point) {
+                    slide1Left[i].classList.add('active');
+                }
+                else {
+                    slide1Left[i].classList.remove('active');
+                }
+
+
+            }
+        }
+
+        ///////////////////////////////////////////////////
+
+        // reveal website 
+
+        window.addEventListener('scroll', slided);
+
+        function slided() {
+            var slideLeft = document.querySelectorAll('.slided');
+
+            for (var i = 0; i < slideLeft.length; i++) {
+                var windowHeight = window.innerHeight;
+
+                var slidtop = slideLeft[i].getBoundingClientRect().top;
+
+                var slidPoint = 50;
+
+                if (slidtop < windowHeight - slidPoint) {
+                    slideLeft[i].classList.add('active');
+                }
+                else {
+                    slideLeft[i].classList.remove('active');
+                }
+
+
+            }
+        }
+
+        ///////////////////////////////////////////////////
     </script>
 
     <script>
