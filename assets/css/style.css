@@ -116,6 +116,7 @@ a {
     background-color: var(--white);
     position: relative;
     z-index: 999;
+    transition: 1s ease !important;
 }
 
 .nav-container {
