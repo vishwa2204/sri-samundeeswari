@@ -112,6 +112,23 @@
         </div>
     </nav>
 
+    <script>
+
+        // NAvbar BG 
+    
+        let navbarBg = document.querySelector('.navbar-main');
+    
+        window.addEventListener('scroll', () => {
+    
+            if (window.scrollY >= 130) {
+                navbarBg.classList.add('nav-background');
+            } else if (window.scrollY < 130) {
+                navbarBg.classList.remove('nav-background');
+    
+            }
+    
+        });
+    </script>
     <!-- navbar section End  -->
 
     <!-- Banner Section Start -->
@@ -184,7 +201,7 @@
 
                 <img src="assets/images/used-pics/1.jpg" class="slided" alt="samundeeswari-about">
                 <img src="assets/images/used-pics/2.jpg" class="slided1" alt="samundeeswari-about">
-                <img src="assets/images/used-pics/3.jpg" class="slided" alt="samundeeswari-about">
+                <img src="assets/images/used-pics/3.jpg" class="slided2" alt="samundeeswari-about">
 
                 <!-- <div class="about-img1">
                     <img src="assets/images/used-pics/1.jpg" class="" width="100%" alt="samundeeswari-about">
@@ -985,23 +1002,23 @@
 
         // reveal website 
 
-        window.addEventListener('scroll', slided);
+        window.addEventListener('scroll', slided2);
 
-        function slided() {
-            var slideLeft = document.querySelectorAll('.slided');
+        function slided2() {
+            var slide2Left = document.querySelectorAll('.slided2');
 
-            for (var i = 0; i < slideLeft.length; i++) {
-                var windowHeight = window.innerHeight;
+            for (var i = 0; i < slide2Left.length; i++) {
+                var window2Height = window.innerHeight;
 
-                var slidtop = slideLeft[i].getBoundingClientRect().top;
+                var slid2top = slide2Left[i].getBoundingClientRect().top;
 
-                var slidPoint = 50;
+                var slid2Point = 50;
 
-                if (slidtop < windowHeight - slidPoint) {
-                    slideLeft[i].classList.add('active');
+                if (slid2top < window2Height - slid2Point) {
+                    slide2Left[i].classList.add('active');
                 }
                 else {
-                    slideLeft[i].classList.remove('active');
+                    slide2Left[i].classList.remove('active');
                 }
 
 
@@ -1086,6 +1103,11 @@
 
 
     </script>
+
+    
+
+
+
 </body>
 
 </html>
