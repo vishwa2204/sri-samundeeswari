@@ -297,6 +297,7 @@ a {
     border-radius: 10px;
     background-color: var(--white);
     width: 250px;
+    height: auto;
     left: 0;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     overflow: hidden;
