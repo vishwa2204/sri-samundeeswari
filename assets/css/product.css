@@ -1,0 +1,145 @@
+:root {
+    --color: #f97010;
+    --color1: #f9af10;
+    --bg-color: #11202d;
+    --white: #fff;
+    --black: #0e0d0d;
+    --gray: rgb(212, 212, 212);
+    --text-gray: #a1a1a1;
+}
+
+.product-page-section {
+    margin-bottom: 8%;
+}
+
+.product-page-title h5 {
+    color: var(--color);
+    font-weight: 700;
+    position: relative;
+    padding: 0px 20px;
+}
+
+.product-page-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-page-boxs {
+    width: 23%;
+    height: 300px;
+}
+
+.product-page-content .product-page-boxs:nth-child(1) {
+    background-image: url(../images/products/new/gear-components.jpg);
+    background-size: cover;
+}
+
+.product-page-content .product-page-boxs:nth-child(2) {
+    background-image: url(../images/products/new/earth-moving-equipments.jpg);
+    background-size: cover;
+}
+
+
+.product-page-content .product-page-boxs:nth-child(3) {
+    background-image: url(../images/products/new/cement-industry.jpeg);
+    background-size: cover;
+}
+
+
+.product-page-content .product-page-boxs:nth-child(4) {
+    background-image: url(../images/products/new/mining-and-stone-crushing-industries.jpg);
+    background-size: cover;
+}
+
+.product-page-contentContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #0e0d0d83;
+    padding: 3%;
+}
+
+.product-page-contentContainer h5 {
+    text-align: center;
+    margin-bottom: 5%;
+    color: var(--color);
+    font-weight: 900;
+    border-bottom: 1px solid var(--color);
+    padding-bottom: 2%;
+    filter: drop-shadow(0 0 10px var(--black));
+}
+
+.product-page-contentContainer ul li {
+    color: var(--white);
+}
+
+.product-page-contentContainer ul li::marker {
+    color: var(--color);
+    border: 1px solid var(--white);
+}
+
+@media screen and (max-width:500px) {
+
+    .product-page-boxs {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:1100px) {
+
+    .product-page-boxs {
+        width: 47%;
+        height: 300px;
+    }
+}
+
+/* grade-content-container  */
+
+.grade-content-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.grade-boxs{
+    width: 30%;
+    text-align: center;
+    height: auto;
+    padding: 2%;
+    background-color: var(--text-gray);
+    border-radius: 15px;
+    color: var(--bg-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.grade-boxs:hover{
+    cursor: pointer;
+}
+
+.grade-boxs h5{
+    font-weight: 900;
+
+}
+
+@media screen and (max-width:500px) {
+    .grade-boxs{
+        width: 100%;
+       
+    
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:768px) {
+    .grade-boxs{
+        width: 47%;
+       
+    
+    }
+}
